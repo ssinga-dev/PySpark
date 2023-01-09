@@ -1,8 +1,9 @@
+## Owner - ssinga ##
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as func
 from pyspark.sql.types import StructType, StructField, IntegerType, StringType
 
-spark = SparkSession.builder.appName("MostPopularSuperhero").getOrCreate()
+spark = SparkSession.builder.appName("MostPopularMarvelSuperhero").getOrCreate()
 
 schema = StructType([ \
                      StructField("id", IntegerType(), True), \
